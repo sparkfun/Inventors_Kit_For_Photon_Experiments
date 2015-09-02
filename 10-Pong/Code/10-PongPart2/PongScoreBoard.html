@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <META HTTP-EQUIV="refresh" CONTENT="15"><!-- refresh our page every 15 seconds -->
+    <!-- 
+    SparkFun Inventor's Kit for Photon
+      Experiment 10 - Part 2
+      This sketch was written by SparkFun Electronics
+      Ben Leduc-Mills
+      August 31, 2015
+      https://github.com/sparkfun
+  
+      This is an example sketch for an analog sensor Pong game, with
+      an html/javascript scoreboard.
+
+      Development environment specifics:
+      Particle Build environment (https://www.particle.io/build)
+      Particle Photon RedBoard
+      Released under the MIT License(http://opensource.org/licenses/MIT) 
+    -->
+    <title>SparkFun Photon SIK Experiment 10 - Part 2</title>
+  </head>
+  <body>
+    <div style="height:300px;overflow:auto;"><!-- make a div set to overflow so our table scrolls -->
+      <table id="scorekeeper"> <!-- table id - important soon -->
+
+      </table>
+    </div>
+    <FORM> <!-- form button to clear data if we want -->
+      <INPUT TYPE="button" onClick="handlers.clearAppData()" VALUE="Clear Scores">
+      </FORM>
+      <!-- javascript starts here -->
+      <script type="text/javascript">
+
+      //object to contain our data
+      var app = {
+        scores: [{
+        }]
+      };
+
+      //to keep track of game number - don't want to record the same game more than once
+      var gameNum =0; 
+
+      //set of functions to handle getting and setting the local storage data from our api call
+      //thanks to stackoverflow user bundleofjoy(http://stackoverflow.com/users/1217785/bundleofjoy) for the inspiration
+      var handlers = {
+
+        //make an api call and save new data from our Particle sketch into our local storage object
+        saveData: function () {
+          var xmlhttp = new XMLHttpRequest();
+
+          // IMPORTANT: replace this with your Particle.variable name and your access token!
+          var url = "https://api.particle.io/v1/devices/PhotonRedBoard_1/data?access_token=6beb0208e226c6476138e55e117396f3d34b1fdb";
+          //var url = "https://api.particle.io/v1/devices/{your device name}/{your Particle.variable name}?access_token={your access_token}";
+          xmlhttp.open("GET", url, true);
+          xmlhttp.send();
+
+
+          xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+              var data = JSON.parse(xmlhttp.responseText);
+              var result = decodeURI(data.result);
+
+              //parse our json object
+              var p = JSON.parse(result);
+
+              //check if the latest game number from Particle is greater than what we last stored locally
+              //if so, add a new score to our scores array
+              if(p.gameID > gameNum){
+                console.log("saved new");
+                app.scores.push({player1Score: p.player1Score, player2Score: p.player2Score, gameID: p.gameID});
+                localStorage.setItem("app", JSON.stringify(app));
+                gameNum = p.gameID;
+
+              }
+
+            }
+          }
+        },
+
+        //get the data currently stored in our HTML 5 localStorage object
+        getData: function () {
+              // Retrieves the object app from localStorage
+              var retrievedObject = localStorage.getItem("app");
+              var savedData = JSON.parse(retrievedObject);
+
+              //if there's something in saved data, let's grab it!
+              if(savedData !== null){
+
+                //and put the data into something we can see on the page (our table)
+                handlers.displayTable();
+
+                //let's also update our local gameID variable with the latest gameID 
+                for(scores in savedData) {
+                  var current = savedData.scores.length-1;
+                  gameNum = savedData.scores[current].gameID;
+                }
+              }  
+
+              return savedData;
+            },
+
+            //deletes all our local data
+            clearAppData: function (event) {
+              localStorage.clear();
+              return false;
+            },
+
+            //displays our data in an html table
+            displayTable: function() {
+              var retrievedObject = localStorage.getItem("app");
+              var savedData = JSON.parse(retrievedObject);
+              var out = "<th>Game Number</th><th>Player 1 Score</th><th>Player 2 Score</th>";
+
+              //iterate through all the scores in our saved data and put them into one long string
+              for(var i = 1; i < savedData.scores.length-1; i++) {
+                out += "<tr>" + "<td>"; 
+                out += savedData.scores[i].gameID+ "</td>";
+                out += "<td>" + savedData.scores[i].player1Score+ "</td>";
+                out += "<td>" + savedData.scores[i].player2Score + "</td>";
+                out +=  "</tr>"
+              }
+
+              console.log(out);
+              //put that long string into our table using out table's id property
+              document.getElementById('scorekeeper').innerHTML = out;
+            }
+
+          };
+
+        //when the window loads (like on refresh), this gets called 
+        window.onload = function () {
+        //get data from localStorage
+        var saved = handlers.getData();
+        //check if its null / undefined
+        if ([null, undefined].indexOf(saved) === -1) {
+
+            //it's not null/undefined - data exists!
+            console.log("Data exists. Here's the data : ", saved);
+            //set your "app" to data from localStorage
+            app = saved;
+
+            handlers.saveData();
+
+        } else {
+            //localStorage is empty
+            console.log("Data does not exist, save to localStorage");
+            //so, save incoming data in localStorage
+            handlers.saveData();
+        }
+    };
+</script> 
+</body>
+</html>
