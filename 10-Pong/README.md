@@ -81,7 +81,7 @@ Here's a handy table for the OLED Breakout connections:
 
 The table and Fritzing image are much more helpful, but if you wanted to see inside the box, here's a shot:
 
-INSERT breadboard pic here
+-> [![alt text](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/3/2/Inventors_Kit_For_Photon-Experiment_Guide-02.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/Inventors_Kit_For_Photon-Experiment_Guide-02.jpg) <-
 
 ###Photon Code
 
