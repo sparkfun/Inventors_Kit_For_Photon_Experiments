@@ -119,7 +119,7 @@ The [Particle Dashboard](https://dashboard.particle.io) is an easy tool for view
 
 Create a new application, and post this code in:
 
-Grab the code from [Code/02_ActivityPublisher/ActivityPublisher.ino](https://github.com/sparkfun/Inventors_Kit_For_Photon_Experiments/blob/master/08_Activity_Tracker/Code/02_ActivityPublisher/ActivityPublisher.ino).
+Grab the code from [Code/02-ActivityPublisher/ActivityPublisher.ino](https://github.com/sparkfun/Inventors_Kit_For_Photon_Experiments/blob/master/08-ActivityTracker/Code/02-ActivityPublisher/ActivityPublisher.ino).
 
 As with the previous part's code, you'll need to include the **SparkFunMMA8452Q** library in this application.
 
