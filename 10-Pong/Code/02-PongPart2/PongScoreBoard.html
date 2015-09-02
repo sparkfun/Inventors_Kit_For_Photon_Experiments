@@ -50,9 +50,8 @@
         saveData: function () {
           var xmlhttp = new XMLHttpRequest();
 
-          // IMPORTANT: replace this with your Particle.variable name and your access token!
-          var url = "https://api.particle.io/v1/devices/PhotonRedBoard_1/data?access_token=6beb0208e226c6476138e55e117396f3d34b1fdb";
-          //var url = "https://api.particle.io/v1/devices/{your device name}/{your Particle.variable name}?access_token={your access_token}";
+          // ******** IMPORTANT: replace this with your device name, Particle.variable name and your access token! ***********************************
+          var url = "https://api.particle.io/v1/devices/{your device name}/{your Particle.variable name}?access_token={your access_token}";
           xmlhttp.open("GET", url, true);
           xmlhttp.send();
 
