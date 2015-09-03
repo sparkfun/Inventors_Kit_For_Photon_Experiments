@@ -60,7 +60,7 @@ There will be a breathing cyan dot next to your Photon RedBoard in the **Devices
 
 For each experiment, we recommend creating a new app. Go to the **Code** section in the navigation bar on the left. The hit the **CREATE NEW APP** button. After typing in the name, you can hit enter.
 
-[![Name app](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/3/2/ScreenShotBlink_1.png)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/ScreenShotBlink_1.png) <-
+[![Name app](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/3/2/ScreenShotBlink_1.png)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/ScreenShotBlink_1.png)
 
 When you create a new app, particle build creates an .ino file and renames the tab in the Particle Build editor.
 
