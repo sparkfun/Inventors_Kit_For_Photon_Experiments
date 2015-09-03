@@ -82,7 +82,7 @@ Let's add the code! Copy and paste the code below into the in Particle Build edi
     	Released under the MIT License(http://opensource.org/licenses/MIT)
     */
     
-    int led = D0; // We name pin D0 as led
+    int led = D0; // LED is connected to D0
     
     // This routine runs only once upon reset
     void setup()
@@ -104,10 +104,6 @@ Once you've pasted the code into the window, let's get in the habit of checking 
 Time for a drum roll please! Hit **Flash** (lightning bolt icon) to load the code onto the Photon RedBoard. 
 
 ###Code to Note
-
-First we name pin D0 as led.
-
-`int led = D0;` 
 
 The Photon RedBoard has digital input/output pins. These pins configured as either inputs or outputs. We set this up with a built-in function called `pinMode()`. The `pinMode()` function takes two values, which you type in the parenthesis after the function name. The first value is a pin number, the second value is the word INPUT or OUTPUT.
 
