@@ -13,7 +13,7 @@
     Released under the MIT License(http://opensource.org/licenses/MIT)
 */
 
-int led = D0; // We name pin D0 as led
+int led = D0; // LED is connected to D0
 
 // This routine runs only once upon reset
 void setup()
