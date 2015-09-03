@@ -4,7 +4,7 @@ The [SparkFun Inventor's Kit for Photon](https://www.sparkfun.com/products/13320
 
 For an overview of the Photon RedBoard and a preview of the kinds of experiments you'll get to build with this kit, check out the video below. 
 
--> <!-- youtube(https://www.youtube.com/watch?v=RP2ow-N9VD0) --> <-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RP2ow-N9VD0" frameborder="0" allowfullscreen></iframe>
 
 <div class="alert alert-warning"><b><span class="glyphicon glyphicon-time"></span> Set Aside Some Time</b> - Each experiment in this kit has two parts, with the second half usually containing an Internet-connected component. Please allow yourself ample time to complete each experiment. You may not get through all the experiments in one sitting.</div>
 
@@ -59,8 +59,6 @@ Before embarking upon the experiments, there are a few items to cover first. If 
 
 The [SparkFun Photon RedBoard](https://www.sparkfun.com/products/13321) is an over-the-air-programmable WiFi development board that is compatible with the [Particle](https://particle.io) cloud, and it is the heart of the SIK for Photon. To learn more about the Photon RedBoard and all it's functionality, visit the [Photon Redboard Hookup Guide](https://learn.sparkfun.com/tutorials/photon-redboard-hookup-guide). 
 
--> <!-- tutorial_big(421) --> <-
-
 ####Base Plate 
 
 To make circuit development easier, we have included a baseplate onto which you can attach your breadboard and your Photon RedBoard. 
@@ -75,8 +73,6 @@ To attach the Photon RedBoard, use the included screws and screwdriver to attach
 ####Breadboard
 
 Solderless breadboards are the go to prototyping tool for those getting started with electronics. If you have never used a breadboard before, we recommend reading through our [How to Use a Breadboard tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard) before starting with the experiments. 
-
--> <!-- tutorial_big(47) --> <-
 
 ####Jumper Wires
 
@@ -104,11 +100,9 @@ If you've worked with Arduino or with our SparkFun Inventor's Kit for Arduino, t
 
 Particle has written a great getting started guide for using their Web IDE, called Particle Build. You can read through their documentation by following the link below. 
 
--> <!-- button(Getting Started with Particle Build, https://docs.particle.io/guide/getting-started/build/photon/) --> <-
+[Getting Started with Particle Build](https://docs.particle.io/guide/getting-started/build/photon/)
 
 We have also written a Photon Development guide to help aid you in your experience. There are numerous ways to develop with the Photon and Photon RedBoard, and this guide covers the three most common methods: Particle Build, Particle Dev, and ARM GCC. 
-
--> <!-- tutorial_big(400) --> <-
 
 For the purposes of this guide, we recommend sticking to the online Particle Build IDE. However, once you feel comfortable using the Photon RedBoard, you are free to explore the other methods for development. 
 
@@ -124,7 +118,7 @@ The red "POWER" LED should illuminate to indicate the Photon RedBoard is on. Onc
 
 To use the Particle cloud -- and their online IDE -- you'll need a Particle account. Head over to [build.particle.io](https://build.particle.io/signup) to sign up, if you haven't already.
 
--> <!-- button(Create a Particle Account!, https://build.particle.io/signup) --> <-
+[Create a Particle Account!](https://build.particle.io/signup)
 
 When you power on a Photon RedBoard for the first time, it should boot up into **listening mode** -- indicated by a blinking, blue LED. It'll remain in listening mode until configured with your WiFi network and password.
 
