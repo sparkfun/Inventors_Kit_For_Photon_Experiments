@@ -93,7 +93,10 @@ void loop()
             while (postToPhant() <= 0)
             {
                 Serial.println("Phant post failed. Trying again."); // Debug statement
-                delay(1000); // Delay 1s so we don't flood the server
+				// Delay 1s, so we don't flood the server. Little delay's allow the Photon time
+				// to communicate with the Cloud.
+                for (int i=0; i<1000; i++)
+                    delay(1);
             }
             // After a successful Phant POST:
             Serial.println("Phant post success!"); // Debug print
