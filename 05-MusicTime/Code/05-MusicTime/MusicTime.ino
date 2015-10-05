@@ -40,11 +40,8 @@ int tempo = 150;
 void setup() 
 {
   pinMode(speakerPin, OUTPUT);
-}
-
-
-void loop() 
-{
+  
+  // We only want to play the song once, so we'll put it in the setup loop
   int i, duration;
 
   for (i = 0; i < songLength; i++) // step through the song arrays
@@ -62,11 +59,14 @@ void loop()
     }
     delay(tempo/10);              // brief pause between notes
   }
+  
+  //If you want your song to loop forever, place that code in the lopp() below. 
+}
 
-  // We only want to play the song once, so we'll pause forever:
-  while(true){}
-  // If you'd like your song to play over and over,
-  // remove the above statement
+
+void loop() 
+{
+//do nothing 
 }
 
 
