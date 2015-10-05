@@ -11,7 +11,7 @@
     Released under the MIT License (http://opensource.org/licenses/MIT)
 */
 
-const int speakerPin = 0;
+const int speakerPin = D2;
 
 // We'll set up an array with the notes we want to play
 // change these values to make different songs!
@@ -102,4 +102,3 @@ int frequency(char note)
   return(0);  // We looked through everything and didn't find it,
               // but we still need to return a value, so return 0.
 }
-
