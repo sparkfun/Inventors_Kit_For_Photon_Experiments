@@ -60,7 +60,7 @@ void setup()
     delay(tempo/10);              // brief pause between notes
   }
   
-  //If you want your song to loop forever, place that code in the lopp() below. 
+  //If you want your song to loop forever, place that code in the loop() below. 
 }
 
 
