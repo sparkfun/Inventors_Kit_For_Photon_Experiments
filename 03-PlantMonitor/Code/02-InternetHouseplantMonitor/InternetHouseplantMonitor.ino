@@ -22,12 +22,12 @@ void setup()
 {
 Serial.begin(9600);   // open serial over USB
 
-pinMode(soilPower, OUTPUT);//Set D7 as an OUTPUT
+pinMode(soilPower, OUTPUT);//Set D6 as an OUTPUT
 digitalWrite(soilPower, LOW);//Set to LOW so no power is flowing through the sensor
 
 //This line creates a variable that is exposed through the cloud.
 //You can request its value using a variety of methods
-Spark.variable("soil", &soil, INT);
+Particle.variable("soil", val);
 }
 
 void loop() 
