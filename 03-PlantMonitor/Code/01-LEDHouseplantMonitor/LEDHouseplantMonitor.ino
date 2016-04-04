@@ -22,7 +22,7 @@ void setup()
 {
 Serial.begin(9600);   // open serial over USB
 
-pinMode(soilPower, OUTPUT);//Set D7 as an OUTPUT
+pinMode(soilPower, OUTPUT);//Set D6 as an OUTPUT
 digitalWrite(soilPower, LOW);//Set to LOW so no power is flowing through the sensor
 }
 
