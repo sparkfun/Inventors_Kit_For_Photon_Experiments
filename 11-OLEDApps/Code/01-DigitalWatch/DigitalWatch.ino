@@ -267,7 +267,7 @@ void displayClock(unsigned int hours, unsigned int minutes, unsigned int seconds
     if ((seconds % 2) == 0) // If seconds is even
         oled.print(":");    // Print a colon
     else                    // Otherwise
-        oled.print(" ");    // Print a spaces
+        oled.print(" ");    // Print a space
         
     // Another printWithLeadZero, this time for minutes.
     printWithLeadZero(minutes, 2);
@@ -352,8 +352,8 @@ void setTimer()
     interrupts(); // re-enable interrupts
 }
 
-// If hour is 0, then it'll draw HH:MM.
-// If hour is greater than 0, it'll draw MM:SS
+// If hour is greater than 0, then it'll draw HH:MM.
+// If hour is 0, it'll draw MM:SS
 void displayTimer(unsigned int hour, unsigned int min, unsigned int sec)
 {
     unsigned int first, second; // variables to track first and second digit
