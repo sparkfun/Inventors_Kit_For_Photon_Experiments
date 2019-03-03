@@ -10,7 +10,7 @@ For an overview of the Photon RedBoard and a preview of the kinds of experiments
 
 Here is a complete list of all the parts included in the SIK for Photon. 
 
--> [![Photon Inventor's Kit Parts](https://cdn.sparkfun.com//assets/parts/1/2/8/8/6/14684-SparkFun_Inventor_s_Kit_for_Photon-01.jpg)](https://www.sparkfun.com/products/14684) <-
+[![Photon Inventor's Kit Parts](https://cdn.sparkfun.com//assets/parts/1/2/8/8/6/14684-SparkFun_Inventor_s_Kit_for_Photon-01.jpg)](https://www.sparkfun.com/products/14684)
 
 
 The SparkFun Inventor's Kit for Photon Includes the following: 
