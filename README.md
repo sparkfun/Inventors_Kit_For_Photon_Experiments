@@ -1,18 +1,16 @@
 # Introduction
 
-The [SparkFun Inventor's Kit for Photon](https://www.sparkfun.com/products/13320), or SIK for Photon for short, is the latest and greatest in Internet of Things kits. Whether you're a software developer just getting in to hardware, an electronics engineer learning software, or somewhere in between, this kit will help you get your projects hooked up to the Internet in no time. 
+The [SparkFun Inventor's Kit for Photon](https://www.sparkfun.com/products/14684), or SIK for Photon for short, is the latest and greatest in Internet of Things kits. Whether you're a software developer just getting in to hardware, an electronics engineer learning software, or somewhere in between, this kit will help you get your projects hooked up to the Internet in no time. 
 
-For an overview of the Photon RedBoard and a preview of the kinds of experiments you'll get to build with this kit, check out the video below. 
+For an overview of the Photon RedBoard and a preview of the kinds of experiments you'll get to build with this kit, [check out the demo video](https://www.youtube.com/embed/RP2ow-N9VD0). 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RP2ow-N9VD0" frameborder="0" allowfullscreen></iframe>
-
-<div class="alert alert-warning"><b><span class="glyphicon glyphicon-time"></span> Set Aside Some Time</b> - Each experiment in this kit has two parts, with the second half usually containing an Internet-connected component. Please allow yourself ample time to complete each experiment. You may not get through all the experiments in one sitting.</div>
+<b>Set Aside Some Time</b> - Each experiment in this kit has two parts, with the second half usually containing an Internet-connected component. Please allow yourself ample time to complete each experiment. You may not get through all the experiments in one sitting.
 
 ### Included Materials 
 
 Here is a complete list of all the parts included in the SIK for Photon. 
 
--> [![Photon Inventor's Kit Parts](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/Photon_Kit.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/Photon_Kit.jpg) <-
+-> [![Photon Inventor's Kit Parts](https://cdn.sparkfun.com//assets/parts/1/2/8/8/6/14684-SparkFun_Inventor_s_Kit_for_Photon-01.jpg)](https://www.sparkfun.com/products/14684) <-
 
 
 The SparkFun Inventor's Kit for Photon Includes the following: 
@@ -36,15 +34,15 @@ The SparkFun Inventor's Kit for Photon Includes the following:
 <li><a href="https://www.sparkfun.com/products/13247">Magnetic Door Switch Set</a></li>
 <li><a href="https://www.sparkfun.com/products/9088">Photocell</a></li>
 <li><a href="https://www.sparkfun.com/products/12062">Red, Blue, Yellow, and Green LEDs</a></li>
-<li><a href="https://www.sparkfun.com/products/10302">Red, Blue, Yellow, and Green Tactile Buttons</a></li>
+<li><a href="https://www.sparkfun.com/products/14460">Red, Blue, Yellow, and Green Tactile Buttons</a></li>
 <li><a href="https://www.sparkfun.com/products/9806">10K Trimpot</a></li>
 <li><a href="https://www.sparkfun.com/products/7950">Piezo Speaker</a></li>
-<li><a href="https://www.sparkfun.com/products/11507">330 Ohm Resistors</a></li>
+<li><a href="https://www.sparkfun.com/products/14490">330 Ohm Resistors</a></li>
 </ul>
 
 If, at any time, you are unsure which part a particular experiment is asking for, reference this section. 
 
-###Suggested Reading
+### Suggested Reading
 
 The following links are here to help guide you in your journey through the SIK for the Photon. Referencing these documents throughout this guide will help you get the most out of this kit. 
 
@@ -55,11 +53,11 @@ The following links are here to help guide you in your journey through the SIK f
 # Using the Kit
 Before embarking upon the experiments, there are a few items to cover first. If you have completed one of our other Inventor's Kits before, you should already be familiar with most of the concepts in this section. If this is your first Inventor's Kit, please read carefully to ensure the best possible SIK experience. 
 
-####Photon RedBoard 
+#### Photon RedBoard 
 
 The [SparkFun Photon RedBoard](https://www.sparkfun.com/products/13321) is an over-the-air-programmable WiFi development board that is compatible with the [Particle](https://particle.io) cloud, and it is the heart of the SIK for Photon. To learn more about the Photon RedBoard and all it's functionality, visit the [Photon Redboard Hookup Guide](https://learn.sparkfun.com/tutorials/photon-redboard-hookup-guide). 
 
-####Base Plate 
+#### Base Plate 
 
 To make circuit development easier, we have included a baseplate onto which you can attach your breadboard and your Photon RedBoard. 
 
@@ -70,11 +68,11 @@ To attach the Photon RedBoard, use the included screws and screwdriver to attach
 -> [![base plate](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/3/2/Inventors_Kit_For_Photon-Experiment_Guide-14.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/Inventors_Kit_For_Photon-Experiment_Guide-14.jpg) <-
 
 
-####Breadboard
+#### Breadboard
 
 Solderless breadboards are the go to prototyping tool for those getting started with electronics. If you have never used a breadboard before, we recommend reading through our [How to Use a Breadboard tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard) before starting with the experiments. 
 
-####Jumper Wires
+#### Jumper Wires
 
 This kit includes twenty 6" long jumper wires terminated as male to male. Multiple jumpers can be connected next to one another on a 0.1" header or breadboard.
 
@@ -84,7 +82,7 @@ Each group of jumpers are connected to each other and can either be pulled apart
 
 -> [![peeling](https://cdn.sparkfun.com/r/400-400/assets/learn_tutorials/3/3/2/Jumper_wire_peel.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/Jumper_wire_peel.jpg) <-
 
-####Screwdriver 
+#### Screwdriver 
 
 Last, we've included a pocket screwdriver set to aid you in any mechanical portions of this guide. Unscrew the cap on the tail end of the screwdriver to reveal the various tips that can be inserted into the head of the screwdriver. 
 
