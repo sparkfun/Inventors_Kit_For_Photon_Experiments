@@ -65,7 +65,7 @@ To attach the breadboard, peel off the adhesive backing, and place the breadboar
 
 To attach the Photon RedBoard, use the included screws and screwdriver to attach the board tot he baseplate. Again, be sure that the text on the pins matches the directions of the breadboard text and the SparkFun logo. The USB connector should be pointing up when looking directly at the baseplate. 
 
--> [![base plate](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/3/2/Inventors_Kit_For_Photon-Experiment_Guide-14.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/Inventors_Kit_For_Photon-Experiment_Guide-14.jpg) <-
+[![base plate](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/3/2/Inventors_Kit_For_Photon-Experiment_Guide-14.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/Inventors_Kit_For_Photon-Experiment_Guide-14.jpg)
 
 
 #### Breadboard
@@ -76,21 +76,21 @@ Solderless breadboards are the go to prototyping tool for those getting started 
 
 This kit includes twenty 6" long jumper wires terminated as male to male. Multiple jumpers can be connected next to one another on a 0.1" header or breadboard.
 
--> [![jumpers](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/jumpOff.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/jumpOff.jpg) <-
+ [![jumpers](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/jumpOff.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/jumpOff.jpg)
 
 Each group of jumpers are connected to each other and can either be pulled apart in any quantity or kept whole based on you needs.
 
--> [![peeling](https://cdn.sparkfun.com/r/400-400/assets/learn_tutorials/3/3/2/Jumper_wire_peel.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/Jumper_wire_peel.jpg) <-
+[![peeling](https://cdn.sparkfun.com/r/400-400/assets/learn_tutorials/3/3/2/Jumper_wire_peel.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/Jumper_wire_peel.jpg)
 
 #### Screwdriver 
 
 Last, we've included a pocket screwdriver set to aid you in any mechanical portions of this guide. Unscrew the cap on the tail end of the screwdriver to reveal the various tips that can be inserted into the head of the screwdriver. 
 
--> [![alt text](https://cdn.sparkfun.com/r/400-400/assets/learn_tutorials/3/3/2/screwdriver1.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/screwdriver1.jpg) <-
+[![alt text](https://cdn.sparkfun.com/r/400-400/assets/learn_tutorials/3/3/2/screwdriver1.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/screwdriver1.jpg)
 
 You will need to swap out tips for various tasks throughout this guide. 
 
--> [![alt text](https://cdn.sparkfun.com/r/400-400/assets/learn_tutorials/3/3/2/screwdriver2.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/screwdriver2.jpg) <-
+[![alt text](https://cdn.sparkfun.com/r/400-400/assets/learn_tutorials/3/3/2/screwdriver2.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/3/3/2/screwdriver2.jpg)
 
 # Using the Particle IDE
 
@@ -108,7 +108,7 @@ For the purposes of this guide, we recommend sticking to the online Particle Bui
 
 The Photon RedBoard can be powered over either USB (using the included [Micro-B Cable](https://www.sparkfun.com/products/13244)) or with a 4.5-15V barrel jack power supply (like either our [5V](https://www.sparkfun.com/products/12889) and [9V](https://www.sparkfun.com/products/298) wall warts). To begin using your Photon RedBoard, plug it in!
 
--> [![USB plugged into Photon RedBoard](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/4/2/1/action-usb-2.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/4/2/1/action-usb-2.jpg) <-
+[![USB plugged into Photon RedBoard](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/4/2/1/action-usb-2.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/4/2/1/action-usb-2.jpg)
 
 The red "POWER" LED should illuminate to indicate the Photon RedBoard is on. Once that's verified, it's time to set up WiFi.
 
